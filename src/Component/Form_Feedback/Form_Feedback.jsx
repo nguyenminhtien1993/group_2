@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React, useEffect,useState } from "react";
 import "../Form_Feedback/Form_Feedback.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,17 +16,97 @@ function Form_Feedback() {
     const select1=document.getElementById("exampleFormControlSelect1");
     select1.disabled= "";
     
+    
   };
   var select2_hide_label = () => {
     const select2=document.getElementById("exampleFormControlSelect2");
     select2.disabled= "";
     document.getElementById("exampleFormControlSelect1").disabled= "disabled";
+    
   };
   var selectbook_hide_label = () => {
     const select2=document.getElementById("exampleFormControlSelect2");
     select2.disabled= "disabled";
     document.getElementById("exampleFormControlSelect1").disabled= "disabled";
+   
   };
+
+
+  var [datafeedback, setDatafeedback] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    exampleFormControlTextarea1:"",
+  });
+  var [error_feedback,setError_feedback]=useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    exampleFormControlTextarea1:"",
+  });
+  var handleChange_feedback = (event) => {
+    var { name, value } = event.target;
+    setDatafeedback({ ...datafeedback, [name]: value });
+  };
+  var handleSubmitfeedback =(event)=>{
+    event.preventDefault();
+    var isvalid = true;
+    var form_error_feedback={...error_feedback};
+    var email = document.getElementById("email").value;
+    if (datafeedback.firstname.trim()===""){
+      alert("Firstname is required");
+      isvalid=false;
+      return isvalid;
+    }
+    else{
+      form_error_feedback.firstname="";
+    }
+    if (datafeedback.lastname.trim()===""){
+      alert("Lastname is required");
+      isvalid=false;
+      return isvalid;
+    }
+    else{
+      form_error_feedback.lastname="";
+    }
+    var ckemail = /^[a-zA-Z_0-9]{4}@[a-z0-9]{5}\.[a-z]{3}$/;
+    if (!ckemail.test(email)) {
+      alert("Email have formated: xxxx@xxxx.com");
+      form_error_feedback.email="invalid Email address format";
+      isvalid=false;
+      return isvalid;
+    }
+    else{
+      form_error_feedback.email="";
+    }
+    if(datafeedback.exampleFormControlTextarea1.trim()===""){
+      alert("Meassage is required");
+      isvalid=false;
+      return isvalid;
+    }
+    else{
+      form_error_feedback.exampleFormControlTextarea1="";
+    }
+    
+    if (  document.getElementById("kids").checked===false)
+    {
+      if ( document.getElementById("adult").checked===false ){
+        if ( document.getElementById("guide-book").checked===false){
+          alert("Type title feeback");
+          isvalid=false;
+          return isvalid;
+        }
+      }
+    }
+     
+   
+    
+    if(isvalid){
+      alert("success !");
+    }
+    setError_feedback(form_error_feedback);
+    return isvalid;
+  }
   return (
     <div>
       <div className="fb-container" data-aos="flip-up">
@@ -35,7 +115,7 @@ function Form_Feedback() {
             <h1>The Origami Feedback Form</h1>
           </div>
           <div className="col-12 col-md-12">
-            <form action="">
+            <form action="" onSubmit={handleSubmitfeedback}>
               <h3 className="fb-label">Fullname</h3>
               <div className="fb-fullname">
                 <input
@@ -43,14 +123,14 @@ function Form_Feedback() {
                   name="firstname"
                   id="firstname"
                   placeholder="First name"
-                  required
+                  onChange={handleChange_feedback}
                 />
                 <input
                   type="text"
                   name="lastname"
                   id="lastname"
                   placeholder="Lastname"
-                  required
+                  onChange={handleChange_feedback}
                 />
               </div>
               <h3 className="fb-label">Email address</h3>
@@ -59,7 +139,7 @@ function Form_Feedback() {
                 name="email"
                 id="email"
                 placeholder="Email address"
-                required
+                onChange={handleChange_feedback}
               />
               <h3 className="fb-label">
                 <b>Type title feeback</b>
@@ -71,14 +151,15 @@ function Form_Feedback() {
                     name="kids_adult"
                     id="kids"
                     onClick={select1_hide_label}
+                    value={0}
                   />
                   For Kids
                 </div>
                 <div>
-                  <input type="radio" name="kids_adult" id="adult" onClick={select2_hide_label}/> For Adult
+                  <input type="radio" name="kids_adult" id="adult" value={0} onClick={select2_hide_label}/> For Adult
                 </div>
                 <div>
-                  <input type="radio" name="kids_adult" id="guide-book" onClick={selectbook_hide_label}/> guide
+                  <input type="radio" name="kids_adult" id="guide-book" value={0} onClick={selectbook_hide_label}/> guide
                   origami book
                 </div>
                 <select className="form-control" id="exampleFormControlSelect1">
@@ -184,9 +265,11 @@ function Form_Feedback() {
                 <textarea
                   className="form-control"
                   id="exampleFormControlTextarea1"
+                  name="exampleFormControlTextarea1"
                   rows="5"
                   placeholder="content"
                   cols="auto"
+                  onChange={handleChange_feedback}
                 ></textarea>
               </div>
               <div class="d-grid gap-2 d-md-block">

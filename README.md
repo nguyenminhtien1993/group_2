@@ -6,7 +6,7 @@
 <div  align="center">
  
 
-<img  src="https://github.com/nguyenminhtien1993/public_group_2/blob/main/src/Img/logo-tach.png"  alt="Logo"  width="70%"  height="15%">
+<img  src="https://github.com/nguyenminhtien1993/public_group_2/blob/main/src/Img/logo-tach.png"  alt="Logo"  width="50%"  height="5%" >
 
 </a>
 
@@ -19,9 +19,9 @@ Welcome to the website of Origami ORGM Joint Stock Company, where the company is
 <a  href="https://github.com/nguyenminhtien1993/group2"><strong>Explore the source »</strong></a>
 <a  href="https://github.com/nguyenminhtien1993/group2" target="_blank"><strong>Explore the documents »</strong></a>
 
-<br  /><a  href="https://group-2-six.vercel.app/" target="_blank">View Demo</a> . <a  href="https://youtu.be/bVX9OvVHBpQ" target="_blank">Video</a>
+<br  /><a  href="https://public-group-2.vercel.app/" target="_blank">View Demo</a> . <a  href="https://youtu.be/bVX9OvVHBpQ" target="_blank">Video</a>
 </div>
-<img  src="https://github.com/nnhatnam05/eProject-Fpt-Aptech-Group5-SafeCarzLimited/assets/146631947/48885fe9-be22-4bfc-9fe1-df41ce0fdfc6"  alt=""  width="768px"  height="auto">
+<img  src="https://github.com/nguyenminhtien1993/public_group_2/blob/main/src/Img/read-me/screen.png"  alt=""  width="768px"  height="auto">
 
 ### Built With
 
@@ -53,6 +53,8 @@ Contact us: Gmail , Google map, phone, adresss, Time of work</br>
 <li>
 Feedback form: the level of saticfaction of customer about content, image, video of categories for kids, adult and the origami guide book.</br>
 </ol>
+
+<b>Note: After downloading the code from Github, you must use the command npm i react-scripts to download the node module library</b>
 
 ## Members of group
 
