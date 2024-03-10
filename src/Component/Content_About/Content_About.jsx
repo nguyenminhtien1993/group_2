@@ -6,9 +6,9 @@ import "aos/dist/aos.css";
 import content_history from "../../Img/content-history.png";
 import hatgiay from "../../Img/hatgiay.jpg";
 import tetholiday from "../../Img/img-about/Tet holiday of children.png";
-import BDG1 from "../../Img/img-about/sharkbinh-phat-ngon-1104.jpg";
-import BDG2 from "../../Img/img-about/lephuocvu.jpg";
-import BDG3 from "../../Img/img-about/tranquoctri.jpg";
+import BDG1 from "../../Img/img-about/hinh_1.png";
+import BDG2 from "../../Img/img-about/hinh_2.png";
+import BDG3 from "../../Img/img-about/hinh_3.png";
 function Content_About() {
   // animation
   useEffect(() => {
@@ -261,12 +261,12 @@ function Content_About() {
         <div className="row">
           <div className="col-12 col-md-4" data-aos="fade-up">
             <div className="container-relative">
-              <img src={BDG1} alt="" srcset="" className="image" />
+            <img src={BDG1} alt="" srcset="" className="image" />
               <div className="overlay">
                 <div className="text">
-                  Full name: Nguyen Hoa Binh. <br />
+                  Full name: Mr Singh Aayush. <br />
                   Year of birth: 1981. <br />
-                  Place of birth: Hanoi <br />
+                  Place of birth: India <br />
                   He is a finance manager for <br /> company ORGM
                 </div>
               </div>
@@ -274,7 +274,7 @@ function Content_About() {
           </div>
           <div className="col-12 col-md-4" data-aos="fade-down">
             <div className="container-relative">
-              <img
+            <img
                 src={BDG2}
                 alt=""
                 srcset=""
@@ -283,9 +283,9 @@ function Content_About() {
               />
               <div className="overlay">
                 <div className="text">
-                  Full name: Le Phuoc Vu. <br />
+                  Full name: Mr Singh Dhairya. <br />
                   Year of birth: 1979. <br />
-                  Place of birth: Viet Nam <br />
+                  Place of birth: India <br />
                   He is a technology manager for <br /> company ORGM
                 </div>
               </div>
@@ -293,7 +293,7 @@ function Content_About() {
           </div>
           <div className="col-12 col-md-4" data-aos="fade-up">
             <div className="container-relative">
-              <img
+            <img
                 src={BDG3}
                 alt=""
                 srcset=""
@@ -302,9 +302,9 @@ function Content_About() {
               />
               <div className="overlay">
                 <div className="text">
-                  Full name: Lee Jun On. <br />
+                  Full name: Ms Kau Aaryahi. <br />
                   Year of birth: 1978. <br />
-                  Place of birth: Indian <br />
+                  Place of birth: India <br />
                   He is a director of strantegy for <br /> company ORGM
                 </div>
               </div>
