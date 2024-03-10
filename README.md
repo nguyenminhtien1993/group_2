@@ -27,7 +27,7 @@ Welcome to the website of Origami ORGM Joint Stock Company, where the company is
 
 Below is the languages/libraries we used for this project:
 
-![HTML]&nbsp;![CSS3] &nbsp;![JS]&nbsp;![BOOSTRAP]&nbsp;![REACT]
+![HTML]&nbsp; ![CSS3] &nbsp; ![JS]&nbsp; ![BOOSTRAP]&nbsp; ![REACT]
 
 <div  align="left">
 
