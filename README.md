@@ -27,7 +27,7 @@ Welcome to the website of Origami ORGM Joint Stock Company, where the company is
 
 Below is the languages/libraries we used for this project:
 
-![HTML]&nbsp; ![CSS3] &nbsp; ![JS]&nbsp; ![BOOSTRAP]&nbsp; ![REACT]
+![HTML]&nbsp;![CSS3] &nbsp;![JS]&nbsp;![BOOSTRAP]&nbsp;![REACT]
 
 <div  align="left">
 
@@ -85,6 +85,7 @@ Nguyễn Minh Tiến `Student1526173` </br>
 Bùi Nhật Thành `Student1526146` </br>
 Cao Văn Chiến `Student1526176` </br>
 Trần Vũ Tuấn  `Student1526178` </br>
+
 [HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [CSS3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [JS]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
