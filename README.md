@@ -16,10 +16,10 @@ Welcome to the website of Origami ORGM Joint Stock Company, where the company is
 
 <br  />
 <div align="center">
-<a  href="https://github.com/nguyenminhtien1993/group2"><strong>Explore the source »</strong></a>
-<a  href="https://github.com/nguyenminhtien1993/group2" target="_blank"><strong>Explore the documents »</strong></a>
+<a  href="https://github.com/nguyenminhtien1993/group_2"><strong>Explore the source »</strong></a>
+<a  href="https://github.com/nguyenminhtien1993/group_2/tree/main/document" target="_blank"><strong>Explore the documents »</strong></a>
 
-<br  /><a  href="https://public-group-2.vercel.app/" target="_blank">View Demo</a> . <a  href="https://youtu.be/bVX9OvVHBpQ" target="_blank">Video</a>
+<br  /><a  href="https://group-2-fptaptech.vercel.app/" target="_blank">View Demo</a> . <a  href="https://www.youtube.com/watch?v=v2RLmaXkd78" target="_blank">Video</a>
 </div>
 <img  src="https://github.com/nguyenminhtien1993/group_2/blob/main/src/Img/read-me/screen.png"  alt=""  width="768px"  height="auto">
 
