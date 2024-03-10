@@ -305,7 +305,7 @@ function Content_About() {
                   Full name: Ms Kau Aaryahi. <br />
                   Year of birth: 1978. <br />
                   Place of birth: India <br />
-                  He is a director of strantegy for <br /> company ORGM
+                  She is a director of strantegy for <br /> company ORGM
                 </div>
               </div>
             </div>
